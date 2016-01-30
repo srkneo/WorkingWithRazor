@@ -10,9 +10,14 @@ namespace WorkingWithRazor.Controllers
     {
 
         public ActionResult Index()
-        {
+        {            
             string[] names = { "Apple", "Orange", "Pear" };
             return View(names);
+        }
+
+        public ActionResult List()
+        {
+            return View();
         }
 	}
 }
