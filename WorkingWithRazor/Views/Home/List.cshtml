@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <div> 
+        This is List View
+    </div>
+    @Html.Partial("MyStronglyTypedPartial", new[] { "Apple", "Orange", "Pear" });
+
+    @Html.Action("Time")
+</body>
+</html>
